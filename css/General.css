@@ -85,7 +85,7 @@ body {
   color: #cf711f;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.75px;
   margin-top: 3.2rem;
 }
 
@@ -149,4 +149,7 @@ body {
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
   gap: 3.2rem;
+}
+.grid--center--v {
+  align-items: center;
 }

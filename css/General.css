@@ -44,6 +44,7 @@ html {
   /* font-size: 10px; */
   font-size: 62.2%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;

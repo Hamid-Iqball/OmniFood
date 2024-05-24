@@ -324,7 +324,7 @@
 }
 
 /* ******************************* */
-/*testimonials section*/
+/*Pricing section*/
 /***********************************/
 
 .section-pricing {
@@ -403,7 +403,7 @@
 }
 
 /* ******************************* */
-/*testimonials section*/
+/*cta section*/
 /***********************************/
 
 .section-cta {
@@ -481,7 +481,7 @@
 }
 
 /* ******************************* */
-/*testimonials section*/
+/*footer section*/
 /***********************************/
 
 .footer {
@@ -529,11 +529,14 @@
   height: 2.4rem;
   width: 2.4rem;
 }
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
 
 .copyright {
   font-size: 1.4rem;
   color: #767676;
-  margin-top: auto;
+  margin-top: 1.2rem;
   line-height: 1.6;
 }
 .contacts {

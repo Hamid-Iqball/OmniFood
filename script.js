@@ -31,7 +31,28 @@ alLinks.forEach((link) =>
     //Closing mobile nav
 
     if (link.classList.contains("main-nav-link")) {
-      headerEl.classList.remove("nav-open");
+      headerEl.classList.toggle("nav-open");
     }
   })
 );
+
+// Sticky Navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.querySelector("body").classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.querySelector("body").classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
